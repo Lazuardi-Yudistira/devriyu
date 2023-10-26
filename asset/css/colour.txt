@@ -1,0 +1,30 @@
+#1f242d bg color
+
+#323946 second bg color
+
+#941e31 maroon
+
+#ffb800 orange 
+
+#333333  dark gray footer
+
+#999999  semi gray footer
+
+#484848  sosial link gray footer
+
+rgba(228, 228, 224, 0.859) white gray menu
+
+gradient jumbotron :
+background: linear-gradient(40deg, #007bff 10%, #6610f2 25%, #6f42c1 30%, #e83e8c 50%, #dc3545 70%, #941E31 90%);
+
+card:
+purple : #8e48fe
+	 #6610f2
+
+secondary : #474d52
+
+green	: #21c77b
+	  #19875a	
+
+
+#4e727d  azure blue copyright created
