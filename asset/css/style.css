@@ -138,14 +138,10 @@ a {
 }
 
 /* main */
-.jumbotron,
-.about,
-.skill,
-.portfolio,
-.logo,
-.kontak {
-  padding-top: 95px;
-  padding-bottom: 95px;
+/* global configuration */
+article {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .line {
@@ -284,6 +280,164 @@ a {
 
 /* end of jumbotron */
 
+/* artikel */
+.judulartikel {
+  margin-bottom: 150px;
+}
+
+.textartikel1 {
+  font-size: 18px;
+}
+
+
+.textartikel2 {
+  font-size: 27px;
+  line-height: 3rem;
+  padding-top: 50px;
+  text-align: justify;
+}
+
+@media (max-width: 990px) {
+  p {
+    font-size: 20px !important;
+    text-align: left !important;
+    line-height: 2rem !important;
+  }
+}
+
+/* end of artikel */
+
+/* kartunflat */
+.kartunflatkiri {
+  display: flex;
+  justify-content: right;
+}
+
+/* end of kartunflat */
+
+
+/* konten marketing 2 */
+.caramembuat {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  font-weight: lighter;
+  font-size: 18px;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+}
+
+/* timeline */
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+  align-self: stretch;
+}
+
+/* .how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #ED8D8D;
+  z-index: 1;
+} */
+
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+
+.timeline hr {
+  border-top: 3px solid var(--main-color);
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+
+.timeline .corner {
+  border: 3px solid var(--main-color);
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+
+/* end of timeline */
+/* end of konten marketing 2 */
+
+
+/* konten marketing 3 */
+.tombolWa2 {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: rgb(19, 175, 240);
+  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem white;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+
+.tombolWa2:hover {
+  box-shadow: none;
+  color: white;
+  background: rgb(19, 175, 240);
+  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
+
+}
+
+/* end of konten marketing 3 */
 
 /* About Me */
 .about img {
