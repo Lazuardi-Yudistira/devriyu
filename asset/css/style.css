@@ -139,7 +139,8 @@ a {
 
 /* main */
 /* global configuration */
-article {
+article,
+section {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -422,7 +423,7 @@ article {
   background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
   border-radius: 4rem;
   box-shadow: 0 0 1rem white;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: white;
   letter-spacing: .1rem;
   font-weight: 600;
@@ -439,15 +440,21 @@ article {
 
 /* end of konten marketing 3 */
 
-/* About Me */
-.about img {
-  width: 100%;
-  height: 100%;
+/* About Devriyu */
+.about {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  border-top-right-radius: 30%;
 }
 
+/* end of about */
 
+/* fitur */
+.fitur {
+  background-color: var(--second-bg-color);
+}
 
-/* end of about me */
+/* end of fitur */
 
 /* skill */
 .skill {
