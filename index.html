@@ -1,1028 +1,1520 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
-
-}
-
-:root {
-  --bg-color: #1f242d;
-  --second-bg-color: #323946;
-  --text-color: #fff;
-  --main-color: #77d4fc;
-  --second-color: salmon;
-  --third-color: #5961f8;
-  --fourth-color: #4b8ef1;
-
-
-}
-
-a {
-  text-decoration: none;
-}
-
-
-/* header */
-/* navbar */
-.navbar {
-  /* background: var(--main-color); */
-}
-
-.navbar ul li a {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-}
-
-.navbar ul li a:hover {
-  color: var(--second-color);
-  font-weight: bolder;
-}
-
-.navbar-brand span {
-  /* color: var(--main-color); */
-  font-weight: bold;
-  font-size: 24px;
-  margin-left: 2rem;
-
-}
-
-
-
-
-.dropdown:hover>.dropdown-menu {
-  display: block;
-
-}
-
-
-.dropdown-menu .dropdown-item {
-  color: #000;
-
-}
-
-.nav-item .dropdown .btn {
-  color: white;
-  font-weight: 600;
-
-}
-
-/* navbar change color while scrolling */
-#header.header-scrolled {
-  background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
-  /* padding: 20px 0; */
-  /* height: 105px; */
-  transition: all 0.5s;
-  font-weight: 500;
-
-}
-
-#header.header-scrolled ul li a {
-  color: var(--text-color);
-  font-weight: bolder;
-}
-
-#header.header-scrolled .navbar-brand span {
-  color: var(--text-color) !important;
-}
-
-
-@media (max-width: 510px) {
-  .navbar-brand img {
-    display: none;
-  }
-}
-
-
-
-@media (max-width: 990px) {
-  #navbarNav ul li a {
-    color: #000;
-    transition: all 0.5s;
-    font-weight: bolder;
-  }
-}
-
-
-
-@media (max-width: 990px) {
-  .dropdown-toggle {
-    color: #000 !important;
-    font-weight: bolder !important;
-  }
-}
-
-
-@media (max-width: 990px) {
-  #navbarNav {
-    background-color: rgb(255, 255, 255);
-    padding-top: 10px;
-    padding-bottom: 20px;
-    /* border-radius: 10%; */
-
-  }
-}
-
-
-@media (max-width: 990px) {
-  .tombolWa {
-    display: none;
-  }
-}
-
-/* main */
-/* global configuration */
-article,
-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.line {
-  border: 1px solid var(--main-color);
-  width: 10%;
-  /* margin-left: 42.5%; */
-}
-
-.line2 {
-  border: 1px solid var(--main-color);
-  width: 10%;
-  margin-left: 45%;
-}
-
-.tombolWa .btn {
-  border: .1rem solid;
-  color: var(--text-color);
-  font-weight: bolder;
-}
-
-.tombolWa .btn:hover {
-  border: none;
-  background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-/* ===== jumbotron ======= */
-.jumbotron {
-  color: #fff !important;
-  background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom-right-radius: 40%;
-}
-
-.jumbotron-img img {
-  width: 100%;
-  animation: floatImage 4s ease-in-out infinite;
-
-}
-
-.jumbotron h1 {
-  color: var(--second-color);
-}
-
-
-
-@keyframes floatImage {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-2.4rem);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-.jumbotron p {
-  font-weight: 500;
-  font-size: 24px;
-}
-
-.jumbotron h3 {
-  font-weight: 700;
-  font-size: 34px;
-}
-
-.jumbotron h1 {
-  font-weight: 700;
-  line-height: 1.3;
-  font-size: 80px;
-}
-
-.social-links a {
-  font-size: 1.3rem;
-  display: inline-block;
-  color: white;
-  line-height: 1;
-  margin-right: 8px;
-  border: .15rem solid white;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  transition: 0.3s;
-
-}
-
-.jumbotron .social-links a {
-  margin-right: 1rem;
-}
-
-.social-links a:hover {
-  background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
-  color: white;
-  box-shadow: 0 0 1rem var(--main-color);
-
-}
-
-.jumbotron .btn {
-  display: inline-block;
-  padding: 1rem 2.8rem;
-  background: white;
-  border-radius: 4rem;
-  box-shadow: 0 0 1rem white;
-  font-size: 1.2rem;
-  color: var(--fourth-color);
-  letter-spacing: .1rem;
-  font-weight: 600;
-  transition: .5s ease;
-}
-
-.jumbotron .btn:hover {
-  box-shadow: none;
-  color: white;
-  background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
-}
-
-
-
-@media (max-width: 990px) {
-  .jumbotron-img {
-    display: none;
-  }
-}
-
-/* end of jumbotron */
-
-/* artikel */
-.judulartikel {
-  margin-bottom: 150px;
-}
-
-.textartikel1 {
-  font-size: 18px;
-}
-
-
-.textartikel2 {
-  font-size: 27px;
-  line-height: 3rem;
-  padding-top: 50px;
-  text-align: justify;
-}
-
-@media (max-width: 990px) {
-  p {
-    font-size: 20px !important;
-    text-align: left !important;
-    line-height: 2rem !important;
-  }
-}
-
-/* end of artikel */
-
-/* kartunflat */
-.kartunflatkiri {
-  display: flex;
-  justify-content: right;
-}
-
-/* end of kartunflat */
-
-
-/* konten marketing 2 */
-.caramembuat {
-  background-color: var(--second-bg-color);
-  color: var(--text-color);
-  font-weight: lighter;
-  font-size: 18px;
-  border-top-left-radius: 25%;
-  border-bottom-right-radius: 25%;
-}
-
-/* timeline */
-.circle {
-  padding: 13px 20px;
-  border-radius: 50%;
-  background-color: var(--main-color);
-  color: #fff;
-  max-height: 50px;
-  z-index: 2;
-}
-
-.how-it-works.row .col-2 {
-  align-self: stretch;
-}
-
-/* .how-it-works.row .col-2::after {
-  content: "";
-  position: absolute;
-  border-left: 3px solid #ED8D8D;
-  z-index: 1;
-} */
-
-.how-it-works.row .col-2.bottom::after {
-  height: 50%;
-  left: 50%;
-  top: 50%;
-}
-
-.how-it-works.row .col-2.full::after {
-  height: 100%;
-  left: calc(50% - 3px);
-}
-
-.how-it-works.row .col-2.top::after {
-  height: 50%;
-  left: 50%;
-  top: 0;
-}
-
-
-.timeline div {
-  padding: 0;
-  height: 40px;
-}
-
-.timeline hr {
-  border-top: 3px solid var(--main-color);
-  margin: 0;
-  top: 17px;
-  position: relative;
-}
-
-.timeline .col-2 {
-  display: flex;
-  overflow: hidden;
-}
-
-.timeline .corner {
-  border: 3px solid var(--main-color);
-  width: 100%;
-  position: relative;
-  border-radius: 15px;
-}
-
-.timeline .top-right {
-  left: 50%;
-  top: -50%;
-}
-
-.timeline .left-bottom {
-  left: -50%;
-  top: calc(50% - 3px);
-}
-
-.timeline .top-left {
-  left: -50%;
-  top: -50%;
-}
-
-.timeline .right-bottom {
-  left: 50%;
-  top: calc(50% - 3px);
-}
-
-
-/* end of timeline */
-/* end of konten marketing 2 */
-
-
-/* konten marketing 3 */
-.tombolWa2 {
-  display: inline-block;
-  padding: 1rem 2.8rem;
-  background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
-  border-radius: 4rem;
-  box-shadow: 0 0 1rem white;
-  font-size: 1.2rem;
-  color: white;
-  letter-spacing: .1rem;
-  font-weight: 600;
-  transition: .5s ease;
-}
-
-.tombolWa2:hover {
-  box-shadow: none;
-  color: white;
-  background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
-
-}
-
-/* end of konten marketing 3 */
-
-/* About Devriyu */
-.about {
-  background-color: var(--second-bg-color);
-  color: var(--text-color);
-  border-top-right-radius: 30%;
-}
-
-/* end of about */
-
-/* fitur */
-.fitur {
-  background-color: var(--second-bg-color);
-}
-
-/* end of fitur */
-
-/* platform */
-.platform {
-  background-color: var(--second-bg-color);
-
-}
-
-.heading {
-  text-align: center;
-  font-size: 3rem;
-  color: white;
-}
-
-.heading span {
-  color: var(--main-color);
-}
-
-.heading2 {
-  text-align: center;
-  font-size: 3rem;
-  color: var(--main-color);
-}
-
-.heading2 span {
-  color: white
-}
-
-
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  border: none;
-  position: relative;
-  margin-bottom: 30px;
-  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
-}
-
-.l-bg-cherry-dark {
-  background: linear-gradient(to right, #493240, #f09) !important;
-  color: #fff;
-}
-
-.l-bg-purple-dark {
-  background: linear-gradient(to right, #493240, rgb(157, 0, 255)) !important;
-  color: #fff;
-}
-
-.l-bg-white-dark {
-  background: linear-gradient(to right, #373b44, #ffffff) !important;
-  color: #fff;
-}
-
-.l-bg-blue-dark {
-  background: linear-gradient(to right, #373b44, #4286f4) !important;
-  color: #fff;
-}
-
-.l-bg-cyan-dark {
-  background: linear-gradient(to right, #373b44, #0ef) !important;
-  color: #fff;
-}
-
-.l-bg-green-dark {
-  background: linear-gradient(to right, #0a504a, #38ef7d) !important;
-  color: #fff;
-}
-
-.l-bg-orange-dark {
-  background: linear-gradient(to right, #a86008, #ffba56) !important;
-  color: #fff;
-}
-
-.card .card-statistic-3 .card-icon-large .fa-solid,
-.card .card-statistic-3 .card-icon-large .far,
-.card .card-statistic-3 .card-icon-large .fab,
-.card .card-statistic-3 .card-icon-large .fal,
-.card .card-statistic-3 .card-icon-large .fa-brands,
-.card .card-statistic-3 .card-icon-large .bi {
-  font-size: 110px;
-}
-
-.card .card-statistic-3 .card-icon {
-  text-align: center;
-  line-height: 50px;
-  margin-left: 15px;
-  color: #000;
-  position: absolute;
-  right: -5px;
-  top: 20px;
-  opacity: 0.1;
-}
-
-.l-bg-cyan {
-  background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
-  color: #fff;
-}
-
-.l-bg-green {
-  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%) !important;
-  color: #fff;
-}
-
-.l-bg-orange {
-  background: linear-gradient(to right, #f9900e, #ffba56) !important;
-  color: #fff;
-}
-
-.l-bg-cyan {
-  background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
-  color: #fff;
-}
-
-/* end of platform */
-
-/* my portfolio */
-#portfolio {
-  padding-top: 115px;
-  padding-bottom: 95px;
-  background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
-  border-bottom-left-radius: 30%;
-}
-
-.portfolio .page-item .page-link {
-  background-color: var(--second-bg-color);
-  border: none;
-  color: white;
-}
-
-.portfolio .page-item .page-link:hover {
-  color: var(--main-color);
-}
-
-#portfolio #portfolio-flters {
-  padding: 0;
-  margin: 5px 0 35px 0;
-  list-style: none;
-  text-align: center;
-}
-
-#portfolio #portfolio-flters li {
-  cursor: pointer;
-  margin: 15px 15px 15px 0;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 12px;
-  line-height: 20px;
-  color: #666666;
-  border-radius: 4px;
-  text-transform: uppercase;
-  background: #fff;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-
-
-#portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
-#portfolio .portfolio-wrap {
-  box-shadow: 0px 2px 12px rgba(255, 255, 255, 0.08);
-  transition: 0.3s;
-}
-
-#portfolio .portfolio-wrap:hover {
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
-}
-
-#portfolio .portfolio-item {
-  position: relative;
-  height: 260px;
-  overflow: hidden;
-}
-
-#portfolio .portfolio-item figure {
-  background: #000;
-  overflow: hidden;
-  height: 240px;
-  position: relative;
-  border-radius: 4px 4px 0 0;
-  margin: 0;
-}
-
-#portfolio .portfolio-item figure:hover img {
-  opacity: 0.4;
-  transition: 0.3s;
-}
-
-figure .imgWeb {
-  height: 100%;
-  width: 100%;
-}
-
-#portfolio .portfolio-item figure .link-preview,
-#portfolio .portfolio-item figure .link-details {
-  position: absolute;
-  display: inline-block;
-  opacity: 0;
-  line-height: 1;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  background: #fff;
-  border-radius: 50%;
-  transition: 0.2s linear;
-}
-
-#portfolio .portfolio-item figure .link-preview i,
-#portfolio .portfolio-item figure .link-details i {
-  padding-top: 6px;
-  font-size: 22px;
-  color: #333;
-}
-
-#portfolio .portfolio-item figure .link-preview:hover,
-#portfolio .portfolio-item figure .link-details:hover {
-  background: var(--bg-color)
-}
-
-#portfolio .portfolio-item figure .link-preview:hover i,
-#portfolio .portfolio-item figure .link-details:hover i {
-  color: var(--main-color);
-}
-
-#portfolio .portfolio-item figure .link-preview {
-  left: calc(50% - 38px);
-  top: calc(50% - 18px);
-}
-
-#portfolio .portfolio-item figure .link-details {
-  right: calc(50% - 38px);
-  top: calc(50% - 18px);
-}
-
-#portfolio .portfolio-item figure:hover .link-preview {
-  opacity: 1;
-  left: calc(50% - 44px);
-}
-
-#portfolio .portfolio-item figure:hover .link-details {
-  opacity: 1;
-  right: calc(50% - 44px);
-}
-
-#portfolio .portfolio-item .portfolio-info {
-  background: #fff;
-  text-align: center;
-  padding: 30px;
-  height: 90px;
-  border-radius: 0 0 3px 3px;
-}
-
-#portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  line-height: 1px;
-  font-weight: 700;
-  margin-bottom: 18px;
-  padding-bottom: 0;
-}
-
-#portfolio .portfolio-item .portfolio-info h4 a {
-  color: #333;
-}
-
-
-
-#portfolio .portfolio-item .portfolio-info p {
-  padding: 0;
-  margin: 0;
-  color: #b8b8b8;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-
-table,
-th,
-td {
-  border: 1px solid black;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-
-
-/* end portfolio */
-
-
-/* logo my client */
-.logo {
-  background-color: white;
-  width: 100%;
-}
-
-
-.logo_slider {
-  overflow: hidden;
-  width: 752px;
-  margin: auto;
-}
-
-.logo_slider {
-  overflow: hidden;
-}
-
-.logo_slider ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  position: relative;
-  animation: mymove 10s linear infinite;
-}
-
-.logo_slider ul li {
-  flex-shrink: 0;
-  flex-grow: 0;
-  display: block;
-  /* border: 1px solid #ccc; */
-  /* margin: 20px; */
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-.logo_slider ul li a img {
-  width: 100%;
-
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: -100%;
-  }
-}
-
-/* Standard syntax */
-
-@keyframes mymove {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: -100%;
-  }
-}
-
-/* end client */
-
-
-/* Kontak */
-#contact {
-  color: white;
-  background-color: var(--bg-color);
-  /* background-color: #048221; */
-  /* background-color: #999999; */
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
-}
-
-.kontak {
-  padding-bottom: 50px;
-}
-
-
-.deskripsiKontak {
-  margin-bottom: 50px;
-}
-
-.infoKontak {
-  margin-bottom: 50px;
-}
-
-
-
-.kontak .container .info-item i {
-  font-size: 20px;
-  color: var(--main-color);
-  float: left;
-  width: 44px;
-  height: 44px;
-  /* background: white; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
-}
-
-
-
-.kontak .container .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 13px;
-  color: rgb(255, 255, 255);
-}
-
-
-.kontak .container .info-item p a {
-  color: white;
-  text-decoration: none;
-}
-
-.kontak .container .info-item p a:hover {
-  color: var(--main-color);
-  font-weight: bold;
-}
-
-/* end kontak */
-
-
-
-
-/* Footer */
-.footer {
-  color: #fff;
-  /* background: url("../img/footer-bg.jpg") top center no-repeat; */
-  /* background-size: cover; */
-  font-size: 16px;
-  padding: 50px 0 50px 0;
-  position: relative;
-}
-
-.footer .footer-links a {
-  text-decoration: none;
-}
-
-
-.footer:before {
-  content: "";
-  background: #161a20;
-  position: absolute;
-  inset: 0;
-}
-
-
-
-.footer .footer-content .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer .footer-content .footer-links ul li {
-  padding: 8px 0;
-}
-
-
-
-.footer .footer-legal .credits {
-  padding-top: 4px;
-  font-size: 13px;
-  color: #fff;
-}
-
-.footer .footer-legal .credits a {
-  color: rgb(127, 225, 255);
-  text-decoration: none;
-}
-
-.footer .footer-legal .credits a:hover {
-  color: whitesmoke;
-  font-weight: bold;
-}
-
-
-
-
-/* Scroll Up */
-#myBtn {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Fixed/sticky position */
-  bottom: 0px;
-  /* Place the button at the bottom of the page */
-  right: 0px;
-  /* Place the button 30px from the right */
-  z-index: 99;
-  /* Make sure it does not overlap */
-  border: none;
-  /* Remove borders */
-  outline: none;
-  /* Remove outline */
-  background-color: rgba(0, 0, 0, 0);
-  /* Set a background color */
-  color: var(--second-color);
-  /* Text color */
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
-  /* border-radius: 30%; */
-  /* Rounded corners */
-
-}
-
-#myBtn i {
-  font-size: 40px;
-}
-
-#myBtn .tombolUp:hover {
-
-  color: var(--main-color);
-}
-
-
-/* Whatsapp floating button */
-.wa-popup {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  left: 25px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-}
-
-.wa-popup:hover {
-  background-color: #FFF;
-  color: #25d366;
-}
-
-.my-float {
-  margin-top: 16px;
-}
-
-.dialog-pop {
-  position: fixed;
-  height: 30px;
-  border-radius: 15px;
-  bottom: 45px;
-  left: 65px;
-  background-color: #ffffff;
-  color: #000;
-  padding-left: 25px;
-  padding-top: 3px;
-  padding-right: 10px;
-
-}
-
-.dialog-pop:hover {
-  background-color: #25d366;
-  color: white;
-}
-
-@media (max-width: 482px) {
-  .dialog-pop {
-    display: none;
-  }
-}
-
-
-
-
-
-/* end of bar progress animation scroll */
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devriyu - Web Service Solution</title>
+  <meta name="description" content="Jasa Pembuatan Website Termurah" />
+  <meta name="keywords" content="website, jasa pembuatan website, website builder, developer, devriyu " />
+
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link href="./asset/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- bootstrap for timeline -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- light box -->
+  <link rel="stylesheet" href="./asset/vendor/lightbox/css/lightbox.min.css">
+
+
+  <!-- box icon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- ion icon -->
+  <link href="./asset/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+  <!-- cloud flare -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+
+  <!-- my css -->
+  <link rel="stylesheet" href="./asset/css/style.css" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./asset/img/logo-color.png">
+  <link href="./asset/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Open Graph Meta Tags untuk media sosial (Opsional) -->
+  <meta property="og:title" content="Jasa Pembuatan Website, Devriyu">
+  <meta property="og:description" content="Web Service Solution, solusi pembuatan website dan optimasi website">
+  <meta property="og:image" content="./asset/img/logo-color.png">
+  <!-- <meta property="og:url" content="https://www.example.com"> -->
+
+  <!-- Canonical URL (Opsional, jika Anda memiliki banyak versi URL yang sama) -->
+  <!-- <link rel="canonical" href="https://www.example.com"> -->
+
+  <!-- Structured Data (Opsional, untuk menambahkan metadata lebih lanjut) -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Jasa Pembuatan Website",
+      "datePublished": "26-10-2023",
+      "author": {
+        "@type": "Person",
+        "name": "Lazuardi Yudistira"
+      },
+      "image": "./asset/img/profile1c.png",
+      "publisher": {
+        "@type": "Devriyu",
+        "name": "Lazuardi Yudistira",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "./asset/img/logo-color.png"
+        }
+      },
+      "description": "Web Service Solution"
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top px-2 py-3" id="header" role="navigation">
+      <div class="container">
+        <div class="ms-5">
+          <a class="navbar-brand" href="#">
+            <img src="./asset/img/logo-white.png" alt="devriyu" width="150px" class="logoHeader">
+            <span class="text-white">Web Service Solution
+            </span>
+          </a>
+        </div>
+
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item container">
+              <a class="nav-link " href="#">Home</a>
+            </li>
+            <li class="nav-item container">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item container">
+              <a class="nav-link " href="#portfolio">Portfolio</a>
+            </li>
+
+            <li class="nav-item  container">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="tombolWa mx-3 my-3">
+            <a class="btn" href="https://api.whatsapp.com/send?phone=6285176881320"><i class="fa fa-whatsapp"></i>
+              Whatsapp</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+  </header>
+  <!-- end of header -->
+
+  <!-- main -->
+  <main>
+    <!-- jumbotron -->
+    <section class="jumbotron" id="jumbotron">
+      <div class="container ps-5 mt-5 mb-5">
+        <div class="pt-5 pb-5 mb-3">
+          <div class="row fs-5 ">
+            <div class="col-lg-6 align-self-center" id="">
+              <h4 class="text-white">Hello, Welcome to</h4>
+              <h1 class="mb-1">Devriyu</h1>
+              <h3 class="mb-4 text-white">Web Service Solution</h3>
+              <p class="text-white">
+                Web jasa pelayanan pembuatan website, Optimasi Website, Optimasi SEO, Training dan Konsultasi seputar
+                layanan website
+              </p>
+              <!-- sosmed -->
+              <div class="social-links d-flex mt-4">
+                <a href="https://api.whatsapp.com/send?phone=6285176881320"
+                  class="d-flex align-items-center justify-content-center"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/lazuardiyudistira/"
+                  class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/lazuardi-yudistira-b21527148/"
+                  class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Lazuardi-Yudistira"
+                  class="d-flex align-items-center justify-content-center"><i class="bi bi-github"></i></a>
+              </div>
+              <!-- lihat layanan -->
+              <a href="https://drive.google.com/file/d/1c18MrFjzLeHvq_LgrVIMf7zXLg3lyiOv/view?usp=sharing"
+                class="btn mt-5">Dapatkan Sekarang</a>
+            </div>
+            <div class="col-lg-6 text-center jumbotron-img ">
+              <img src="./asset/img/herosection.png" alt="herosection" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of jumbotron -->
+
+    <!-- konten marketing 1-->
+    <article class="punyawebsite  container">
+      <h1 class="text-center judulartikel">Pentingnya Memiliki Website dalam Era Digital</h1>
+
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <h2>Segitu penting kah punya website saat ini?</h2>
+          <img src="./asset/img/question.png" alt="" width="70%">
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <p class=" textartikel2">Dalam era digital yang berkembang pesat, memiliki sebuah website telah menjadi suatu
+            keharusan, terutama
+            bagi bisnis, organisasi, atau individu yang ingin membangun kehadiran online yang kuat. Website adalah salah
+            satu aspek yang sangat penting dalam strategi pemasaran dan komunikasi modern. </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <h2 class="text-center pt-5">Keuntungan mempunyai website :</h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <h3>1. Kegunaan Website dalam Bisnis</h3>
+          <p class="textartikel1">Website adalah salah satu alat terpenting dalam dunia bisnis saat ini. Sebagai
+            platform
+            online, website
+            memungkinkan perusahaan untuk menghadirkan produk atau layanan mereka kepada pasar global. Bisnis kecil,
+            menengah, dan besar semuanya dapat memanfaatkan website untuk memperluas jangkauan mereka dan meningkatkan
+            penjualan. Selain itu, website juga digunakan untuk membangun citra merek, memberikan informasi produk,
+            serta menawarkan layanan pelanggan.</p>
+          <br>
+          <h3>2. Kegunaan Website dalam Pendidikan</h3>
+          <p class="textartikel1">Dalam pendidikan, website digunakan sebagai sumber informasi, platform pembelajaran,
+            dan alat komunikasi. Sekolah, perguruan tinggi, dan universitas seringkali memiliki website resmi yang
+            menyediakan informasi tentang program akademik, jadwal kuliah, dan sumber daya pendidikan. Selain itu,
+            banyak kursus online dan platform pembelajaran e-learning juga mengandalkan website sebagai tempat
+            pengajaran.</p>
+          <br>
+          <h3>3. Kegunaan Website dalam Komunikasi</h3>
+          <p class="textartikel1">Website adalah alat penting dalam komunikasi dan berbagi informasi. Blog pribadi,
+            portal berita, dan forum online adalah contoh penggunaan website dalam hal ini. Website juga memungkinkan
+            organisasi dan komunitas untuk berkomunikasi dengan anggotanya, menyampaikan informasi terkini, dan
+            mendukung diskusi yang lebih luas.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="./asset/img/5.png" alt="">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6 kartunflatkiri">
+          <img src="./asset/img/3.png" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h3>4. Kegunaan Website dalam Penelitian dan Informasi</h3>
+          <p class="textartikel1">Website juga memainkan peran penting dalam penelitian dan akses informasi. Berbagai
+            institusi penelitian, perpustakaan, dan arsip menyediakan akses online ke jurnal ilmiah, database, dan
+            sumber daya penelitian. Hal ini memudahkan peneliti dan pelajar untuk mengakses informasi terbaru dan
+            referensi yang dibutuhkan.</p>
+          <br>
+          <h3>5. Kegunaan Website dalam Pemerintahan</h3>
+          <p class="textartikel1">Pemerintah juga memanfaatkan website untuk memberikan layanan publik, menginformasikan
+            warga, dan mendorong partisipasi. Situs web resmi pemerintah menyediakan akses ke informasi hukum, berita,
+            layanan pajak, pemilihan umum, dan banyak lagi. Website juga digunakan untuk mempromosikan transparansi dan
+            akuntabilitas pemerintah.</p>
+          <br>
+          <h3>6. Kegunaan Website dalam Kreativitas dan Ekspresi</h3>
+          <p class="textartikel1">Website juga menjadi tempat bagi individu dan kelompok untuk mengekspresikan
+            kreativitas mereka. Blog pribadi, portofolio seni, situs web musik independen, dan toko online adalah contoh
+            cara website digunakan untuk mengekspresikan ide dan bakat.</p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- end of konten marketing 1 -->
+
+    <!-- konten marketing 2 -->
+    <article class="caramembuat ">
+      <div class="">
+        <div class="container">
+          <h2 class="pb-3 pt-2 border-bottom mb-5">Cara membuat website</h2>
+          <!--first section-->
+          <div class="row align-items-center how-it-works d-flex">
+            <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold">1</div>
+            </div>
+            <div class="col-6">
+              <h5>Tentukan Tujuan dan Target Audience Anda</h5>
+              <p>Sebelum Anda memulai proses pembuatan website, Anda perlu memiliki pemahaman yang jelas tentang tujuan
+                website Anda. Apakah ini akan menjadi blog pribadi, situs bisnis, portofolio online, atau toko online?
+                Menentukan tujuan akan membantu Anda memilih alat dan platform yang sesuai.</p>
+            </div>
+          </div>
+          <!--path between 1-2-->
+          <div class="row timeline">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!--second section-->
+          <div class="row align-items-center justify-content-end how-it-works d-flex">
+            <div class="col-6 text-right">
+              <h5>Pilih Platform Website</h5>
+              <p>Ada banyak platform website yang tersedia, seperti WordPress, Wix, Joomla, dan banyak lainnya. Pilih
+                platform yang paling sesuai dengan kebutuhan Anda. Sebagian besar platform ini memiliki antarmuka yang
+                mudah digunakan dan banyak tema serta plugin yang dapat membantu Anda mempersonalisasi website Anda.Atau
+                Anda bisa mencoba belajar membuat website dengan pengetahuan dasar pemrograman web seperti HTML, CSS,
+                Javascript, PHP.</p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold">2</div>
+            </div>
+          </div>
+          <!--path between 2-3-->
+          <div class="row timeline">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+          <!--third section-->
+          <div class="row align-items-center how-it-works d-flex">
+            <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold">3</div>
+            </div>
+            <div class="col-6">
+              <h5>Pilih Nama Domain dan Hosting</h5>
+              <p>Domain adalah alamat web unik Anda (misalnya, www.namaanda.com), dan hosting adalah tempat di mana
+                semua file situs web Anda akan disimpan. Pilih nama domain yang relevan dengan situs Anda dan pilih
+                penyedia hosting yang andal.</p>
+            </div>
+          </div>
+
+
+          <!--path between 3-4-->
+          <div class="row timeline">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!--fourth section-->
+          <div class="row align-items-center justify-content-end how-it-works d-flex">
+            <div class="col-6 text-right">
+              <h5>Instalasi Platform Website</h5>
+              <p>Setelah Anda memiliki nama domain dan hosting, instal platform website yang Anda pilih. Ini biasanya
+                melibatkan mengunduh platform, mengunggahnya ke server hosting Anda, dan mengonfigurasi pengaturan awal.
+              </p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold">4</div>
+            </div>
+          </div>
+          <!--path between 4-5-->
+          <div class="row timeline">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+          <!--fifth section-->
+          <div class="row align-items-center how-it-works d-flex">
+            <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold">5</div>
+            </div>
+            <div class="col-6">
+              <h5>Pilih Tema dan Desain</h5>
+              <p>Pilih tema atau template yang sesuai dengan gaya dan tujuan website Anda. Kemudian, kustomisasi tema
+                tersebut sesuai keinginan Anda. Anda dapat mengubah warna, tata letak, dan menambahkan elemen desain
+                lainnya.</p>
+            </div>
+          </div>
+
+          <!--path between 5-6-->
+          <div class="row timeline">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!--sixth section-->
+          <div class="row align-items-center justify-content-end how-it-works d-flex">
+            <div class="col-6 text-right">
+              <h5>Buat Konten Anda</h5>
+              <p>Isi website Anda dengan konten yang relevan dan berkualitas. Ini bisa berupa teks, gambar, video, atau
+                konten lainnya. Pastikan konten Anda mudah dipahami dan menarik bagi audiens Anda.
+              </p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold">6</div>
+            </div>
+          </div>
+          <!--path between 6-7-->
+          <div class="row timeline">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+          <!--seventh section-->
+          <div class="row align-items-center how-it-works d-flex">
+            <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold">7</div>
+            </div>
+            <div class="col-6">
+              <h5>Optimasi SEO </h5>
+              <p>Untuk membantu website Anda muncul dalam hasil pencarian, pastikan Anda melakukan optimasi SEO. Ini
+                termasuk menggunakan kata kunci yang relevan, membuat deskripsi meta yang baik, dan memastikan bahwa
+                situs Anda memiliki struktur yang baik.</p>
+            </div>
+          </div>
+
+          <!--path between 7-8-->
+          <div class="row timeline">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!--eight section-->
+          <div class="row align-items-center justify-content-end how-it-works d-flex">
+            <div class="col-6 text-right">
+              <h5>Uji Website Anda</h5>
+              <p>Sebelum meluncurkan website Anda secara resmi, uji situs Anda untuk memastikan bahwa semuanya berfungsi
+                dengan baik. Pastikan tautan bekerja, gambar dimuat dengan cepat, dan semua halaman terlihat dengan
+                baik.
+              </p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold">8</div>
+            </div>
+          </div>
+          <!--path between 8-9-->
+          <div class="row timeline">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+          <!--nineth section-->
+          <div class="row align-items-center how-it-works d-flex">
+            <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold">9</div>
+            </div>
+            <div class="col-6">
+              <h5>Peluncuran</h5>
+              <p>Setelah Anda yakin bahwa semuanya berjalan dengan baik, saatnya meluncurkan website Anda. Buatlah
+                pengumuman kepada audiens Anda dan mulai mempromosikan situs Anda.</p>
+            </div>
+          </div>
+
+
+          <!--path between 9-10-->
+          <div class="row timeline">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!--ten section-->
+          <div class="row align-items-center justify-content-end how-it-works d-flex">
+            <div class="col-6 text-right">
+              <h5>Pertahankan dan Tingkatkan</h5>
+              <p>Setelah website Anda online, jangan lupakan untuk terus memperbarui konten Anda, mengawasi statistik,
+                dan mengikuti perkembangan teknologi web. Jangan ragu untuk melakukan perbaikan dan peningkatan
+                berdasarkan umpan balik dan kebutuhan audiens Anda.
+              </p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold">10</div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </article>
+
+    <!-- end of konten marketing 2 -->
+
+
+    <!-- konten marketing 3 -->
+    <article class="kamibantu container text-center">
+      <h1 class="mb-5 text-danger">Apakaha Anda tertarik untuk mempunyai website?</h1>
+      <h1 class="mb-5">Apakah Anda ingin membuat website Anda sendiri tetapi masih awam?</h1>
+      <h1 class="mb-5">Atau</h1>
+      <h1 class="mb-5  text-danger">Anda cukup sibuk sehingga tidak punya waktu untuk membuat website?</h1>
+      <br>
+      <h1 class="mt-5 mb-5">Tenang, kami siap membantu membuat <br> <span class="text-danger">Website Impian
+          Anda!</span>
+      </h1>
+
+
+    </article>
+    <!-- end of konten marketing 3 -->
+
+    <!-- About Devriyu -->
+    <section class="about" id="about">
+      <div class=" container">
+        <div class="row mb-5 text-center">
+          <h1 class="heading mb-5">
+            <span>Devriyu</span>
+          </h1>
+          <h2 class="mb-5">Web Service Solution</h2>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6 px-5">
+            <img src="./asset/img/logo-no-background.png" alt="logodevriyu" width="100%">
+          </div>
+          <div class="col-lg-6 align-self-center textartikel1 px-5">
+            <p>Kami adalah tim profesional yang berdedikasi untuk membantu Anda menciptakan situs web impian Anda.
+              Dengan pengalaman bertahun-tahun dalam industri ini, kami siap untuk membantu Anda mengatasi tantangan apa
+              pun dalam membuat situs web yang sesuai dengan visi Anda. Temui tim kami, kenali kami lebih lanjut, dan
+              lihat mengapa kami adalah pilihan terbaik untuk membuat situs web yang mengesankan.</p>
+            <a href="#" class="btn mt-5 tombolWa2">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- end of About Devriyu -->
+
+    <section class="fitur">
+      <div class="container">
+        <div class="row mb-5">
+          <h1 class="heading mb-5">
+            Mengapa Memilih <span>Devriyu ?</span>
+          </h1>
+          <p class="text-white textartikel1">Kriteria website yang baik mencakup beberapa fitur di dalamnya seperti
+            desain
+            yang
+            menarik, responsif,
+            kecepatan muat yang cepat dan masih banyak lagi. Semua kriteria tersebut masuk ke dalam fitur website yang
+            kami buat</p>
+          <p class="text-white textartikel1">Inilah beberapa keunggulan fitur kami :</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 align-self-center ps-4">
+                  <lord-icon src="https://cdn.lordicon.com/oqaajvyl.json" trigger="loop" delay="1500" state="hover-line"
+                    style="width:120px;height:120px">
+                  </lord-icon>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Unlimited Revisi</h5>
+                    <p class="card-text">Gratis unlimited revisi untuk pembuatan website pertama kali selama setahun
+                      atau langganan Extend Hosting Pro gratis revisi sepanjang tahun.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 align-self-center ps-4">
+                  <lord-icon src="https://cdn.lordicon.com/tltikfri.json" trigger="loop" state="loop-rotate"
+                    style="width:120px;height:120px">
+                  </lord-icon>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Free Domain</h5>
+                    <p class="card-text">Gratis domain .com / .net /.id / .org dll sepanjang waktu selama berlangganan.
+                      Pilih domain yang sesuai dengan jenis usaha Anda.
+                    </p>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 align-self-center ps-4">
+                  <lord-icon src="https://cdn.lordicon.com/hojnqwxj.json" trigger="loop" state="loop-rotate"
+                    state="in-reveal" style="width:120px;height:120px">
+                  </lord-icon>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Free Email Hosting</h5>
+                    <p class="card-text">Gratis email hosting untuk perusahaan selama berlangganan. <br> Misal:
+                      www.admin@nama_perusahaan.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 align-self-center ps-4">
+                  <lord-icon src="https://cdn.lordicon.com/nmguxqka.json" trigger="loop" delay="1500"
+                    state="hover-squeeze" style="width:120px;height:120px">
+                  </lord-icon>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">The Best Data Security</h5>
+                    <p class="card-text">Data Anda lebih aman karena tersedia fitur Backup, proteksi dari virus/malware
+                      dan Gratis SSL untuk
+                      melindungi data Anda lebih aman.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 align-self-center ps-4">
+                  <lord-icon src="https://cdn.lordicon.com/aqrzgjfy.json" trigger="loop" delay="1500"
+                    style="width:120px;height:120px">
+                  </lord-icon>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Fast Load</h5>
+                    <p class="card-text">Kami menggunakan layanan hosting yang baik sehingga kecepatan membuka website
+                      kami
+                      terbilang cepat sehingga membuat audiens lebih nyaman.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 align-self-center ps-4">
+                  <lord-icon src="https://cdn.lordicon.com/ajfmgpbq.json" trigger="loop" delay="1500"
+                    style="width:120px;height:120px">
+                  </lord-icon>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">SEO Friendly</h5>
+                    <p class="card-text">Website yang kami buat sudah SEO Friendly, sehingga lebih mudah untuk muncul
+                      dan dicari audiens di situs pencarian seperti google.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 align-self-center ps-4">
+                  <lord-icon src="https://cdn.lordicon.com/belvsdfp.json" trigger="loop" delay="1500"
+                    style="width:120px;height:120px">
+                  </lord-icon>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Ratusan tema </h5>
+                    <p class="card-text">Buat sesuai desain Anda atau untuk Anda yang belum punya desain, tak perlu
+                      bingung. Kami sedia ratusan
+                      template tema yang bisa Anda pilih.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 align-self-center ps-4">
+                  <lord-icon src="https://cdn.lordicon.com/dqrpfjei.json" trigger="loop" delay="1500"
+                    style="width:120px;height:120px">
+                  </lord-icon>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Responsive View</h5>
+                    <p class="card-text">Website yang kami buat sudah responsive. Artinya tampilan web akan menyesuaikan
+                      ukuran berbagai device seperti Desktop,Tablet & Mobile.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 align-self-center ps-4">
+                  <lord-icon src="https://cdn.lordicon.com/amjaykqd.json" trigger="loop" delay="1500"
+                    style="width:120px;height:120px">
+                  </lord-icon>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Quick Respond</h5>
+                    <p class="card-text">Jika Anda bingung dengan salah satu layanan kami atau mengalami kendala.
+                      Tenang, tidak perlu khawatir,
+                      kami siap merespond masalah Anda dengan cepat.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Platform -->
+    <div class="" id="platform">
+      <section class="platform">
+        <h2 class="heading mb-5">Our <span>Platform</span></h2>
+
+        <div class="container">
+          <p class="text-white textartikel1 text-center">Kami menggunakan platform/teknologi di bawah ini sebagai
+            penunjang
+            pembuatan website :</p>
+
+          <div class="row pt-3">
+            <div class="col-xl-3 col-lg-3">
+              <div class="card l-bg-orange-dark">
+                <div class="card-statistic-3 p-4">
+                  <div class="card-icon card-icon-large">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="card-title mb-0">Web Programming</h5>
+                  </div>
+                  <div class="row align-items-center mb-2 d-flex">
+                    <div class="col-8">
+                      <h2 class="d-flex align-items-center mb-0">
+                        HTML
+                      </h2>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3">
+              <div class="card l-bg-blue-dark">
+                <div class="card-statistic-3 p-4">
+                  <div class="card-icon card-icon-large">
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="card-title mb-0">Web Programming</h5>
+                  </div>
+                  <div class="row align-items-center mb-2 d-flex">
+                    <div class="col-8">
+                      <h2 class="d-flex align-items-center mb-0">
+                        CSS
+                      </h2>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3">
+              <div class="card l-bg-green-dark">
+                <div class="card-statistic-3 p-4">
+                  <div class="card-icon card-icon-large">
+                    <i class="fa-brands fa-js"></i>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="card-title mb-0">Web Programming</h5>
+                  </div>
+                  <div class="row align-items-center mb-2 d-flex">
+                    <div class="col-8">
+                      <h2 class="d-flex align-items-center mb-0">
+                        Javascript
+                      </h2>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3">
+              <div class="card l-bg-cyan-dark">
+                <div class="card-statistic-3 p-4">
+                  <div class="card-icon card-icon-large">
+                    <i class="fa-brands fa-php"></i>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="card-title mb-0">Web Programming</h5>
+                  </div>
+                  <div class="row align-items-center mb-2 d-flex">
+                    <div class="col-8">
+                      <h2 class="d-flex align-items-center mb-0">
+                        PHP
+                      </h2>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-3">
+            <div class="col-xl-3 col-lg-3">
+              <div class="card l-bg-purple-dark">
+                <div class="card-statistic-3 p-4">
+                  <div class="card-icon card-icon-large">
+                    <i class="fa-brands fa-bootstrap"></i>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="card-title mb-0">Framework</h5>
+                  </div>
+                  <div class="row align-items-center mb-2 d-flex">
+                    <div class="col-8">
+                      <h2 class="d-flex align-items-center mb-0">
+                        Bootstrap
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3">
+              <div class="card l-bg-cyan-dark">
+                <div class="card-statistic-3 p-4">
+                  <div class="card-icon card-icon-large">
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="card-title mb-0">Javascript Library</h5>
+                  </div>
+                  <div class="row align-items-center mb-2 d-flex">
+                    <div class="col-8">
+                      <h3 class="d-flex align-items-center mb-0">
+                        React Js
+                      </h3>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3">
+              <div class="card l-bg-white-dark">
+                <div class="card-statistic-3 p-4">
+                  <div class="card-icon card-icon-large">
+                    <i class="fa-brands fa-wordpress"></i>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="card-title mb-0">CMS</h5>
+                  </div>
+                  <div class="row align-items-center mb-2 d-flex">
+                    <div class="col-8">
+                      <h2 class="d-flex align-items-center mb-0">
+                        Wordpress
+                      </h2>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3">
+              <div class="card l-bg-blue-dark">
+                <div class="card-statistic-3 p-4">
+                  <div class="card-icon card-icon-large">
+                    <i class="bi bi-camera2"></i>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="card-title mb-0">Graphic Design</h5>
+                  </div>
+                  <div class="row align-items-center mb-2 d-flex">
+                    <div class="col-8">
+                      <h2 class="d-flex align-items-center mb-0">
+                        Photoshop
+                      </h2>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- end of our platform -->
+
+    <!-- my porfolio -->
+    <div class="" id="portfolio">
+      <section class="portfolio">
+        <div class="container">
+          <h2 class="heading mb-5">Our Portfolio
+          </h2>
+          <p class="text-white textartikel1 text-center mb-5">Di bawah ini adalah beberapa contoh portfolio atau hasil
+            karya
+            website kami
+            dengan customer :</p>
+          <!-- pagination -->
+          <!-- <nav aria-label="..." class="mt-5 mb-4">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="#menuGaleri" data-bs-slide-to="0">Website</a></li>
+              <li class="page-item"><a class="page-link" href="#menuGaleri" data-bs-slide-to="1">Graphic Design</a>
+              </li>
+            </ul> -->
+          </nav>
+          <!-- end pagination -->
+
+          <div id="menuGaleri" class="carousel slide mt-5">
+            <div class="carousel-inner">
+              <!-- galery page 1 -->
+              <div class="carousel-item active">
+                <div class="gPage1">
+                  <div class="row portfolio-container">
+                    <!-- foto 1 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/indorayungfull.png" class="imgWeb" alt="">
+                          <a href="./asset/img/indorayungfull.png" data-lightbox="portfolio"
+                            data-title="Company profile website with raw material product catalogue"
+                            class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="https://indorayung.com" class="link-details" title="Live"><i
+                              class="ion ion-android-open"></i></a>
+                        </figure>
+
+                      </div>
+                    </div>
+                    <!-- foto 2 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/rnpfull.png" class="imgWeb" alt="">
+                          <a href="./asset/img/rnpfull.png" class="link-preview" data-lightbox="portfolio" data-title="
+                        Company profile website for a legal consulting service" title="Preview"><i
+                              class="ion ion-eye"></i></a>
+                          <a href="https://rnp-lawoffice.com" class="link-details" title="Live"><i
+                              class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                    <!-- foto 3 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/mahaputrafull.png" class="imgWeb" alt="">
+                          <a href="./asset/img/mahaputrafull.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Company profile website for a legal consulting service" title="Preview"><i
+                              class="ion ion-eye"></i></a>
+                          <a href=" https://lazuardi-yudistira.github.io/legalmahaputra" class="link-details"
+                            title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row portfolio-container">
+                    <!-- foto 4 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/tourgkfull.png" class="imgWeb" alt="">
+                          <a href="./asset/img/tourgkfull.png" data-lightbox="portfolio"
+                            data-title="Tourism and transportation services company profile website"
+                            class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="https://lazuardi-yudistira.github.io/tourgunungkidul/index.html" class="link-details"
+                            title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+
+                      </div>
+                    </div>
+                    <!-- foto 5 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/lazu_react.png" class="imgWeb" alt="">
+                          <a href="./asset/img/lazu_react.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="
+                        Portfolio website using React Js library" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="https://lazuardi-yudistira.github.io/reactportfolio/" class="link-details"
+                            title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                    <!-- foto 6 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/lazstudiofull.png" class="imgWeb" alt="">
+                          <a href="./asset/img/lazstudiofull.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Portfolio website using the Materialize framework" title="Preview"><i
+                              class="ion ion-eye"></i></a>
+                          <a href="https://lazuardi-yudistira.github.io/Company-Profile-Materialize/"
+                            class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- galeri page 2 -->
+              <!-- <div class="carousel-item">
+                <div class="gPage1">
+              
+                  <div class="row portfolio-container">
+                   
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k2.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k2.png" data-lightbox="portfolio" data-title="Design using Canva"
+                            class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+
+                      </div>
+                    </div>
+                 
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k3.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k3.png" class="link-preview" data-lightbox="portfolio" data-title="
+                        Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k4.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k4" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                   
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k5.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k5.png" data-lightbox="portfolio" data-title="Design using Canva"
+                            class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="row portfolio-container">
+                
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k6.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k6.png" class="link-preview" data-lightbox="portfolio" data-title="
+                        Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+
+
+                      </div>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k7.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k7.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+
+                      </div>
+                    </div>
+         
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k8.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k8.png" data-lightbox="portfolio" data-title="Design using Canva"
+                            class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+
+                      </div>
+                    </div>
+    
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k9.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k9.png " class="link-preview" data-lightbox="portfolio" data-title="
+                        Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+               
+                  <div class="row portfolio-container">
+                  
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k10.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k10.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+
+                      </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k11.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k11.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                 
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k12.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k12.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+
+                      </div>
+
+                    </div>
+              
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k13.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k13.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+
+                      </div>
+
+                    </div>
+                  </div>
+            
+                  <div class="row portfolio-container">
+         
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k14.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k14.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+               
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k15.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k15.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+             
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k16.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k16.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva and Twibbonize" title="Preview"><i
+                              class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+
+                      </div>
+
+
+                    </div>
+        
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k17.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k17.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva and Twibbonize" title="Preview"><i
+                              class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+   
+                  <div class="row portfolio-container">
+       
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k18.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k18.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k19.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k19.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+               
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k20.jpg" class="imgWeb" alt="">
+                          <a href="./asset/img/k20.jpg" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Corel Draw" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                 
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k21.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k21.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Photoshop" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="row portfolio-container">
+              
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k22.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k22.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Corel Draw" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+            
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="portfolio-wrap">
+                        <figure>
+                          <img src="./asset/img/k1.png" class="imgWeb" alt="">
+                          <a href="./asset/img/k1.png" class="link-preview" data-lightbox="portfolio"
+                            data-title="Design using Canva" title="Preview"><i class="ion ion-eye"></i></a>
+                          <a href="#" class="link-details" title="Live"><i class="ion ion-android-open"></i></a>
+                        </figure>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- galeri page 3 -->
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- end of portfolio -->
+
+
+    <!-- logo slide -->
+    <section class="logo">
+      <h2 class="heading2 mb-5">Our Client
+      </h2>
+      <div class="logo_slider mt-5 mb-5">
+
+        <div class="mt-5 mb-5">
+          <ul>
+            <li><a href="#"><img src="./asset/img/rnp-nobg.png" alt=""></a>
+            </li>
+            <li><a href=""><img src="./asset/img/logomahaputra.png" alt=""></a>
+            </li>
+            <li><a href=""><img src="./asset/img/logoindorayung.png" alt=""></a>
+            </li>
+            <li class="pt-5"><a href=""><img src="./asset/img/sharalogo.png" alt=""></a>
+            </li>
+
+            <li><a href="#"><img src="./asset/img/rnp-nobg.png" alt=""></a>
+            </li>
+            <li><a href=""><img src="./asset/img/logomahaputra.png" alt=""></a>
+            </li>
+            <li><a href=""><img src="./asset/img/logoindorayung.png" alt=""></a>
+            </li>
+            <li class="pt-5"><a href=""><img src="./asset/img/sharalogo.png" alt=""></a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- end logo slide -->
+
+
+
+    <!-- Kontak -->
+    <div class="" id="contact">
+      <section class="kontak">
+        <div class="container">
+          <div class="deskripsiKontak text-center">
+            <h2 class="heading2 mb-5">Contact <span>Us</span></h2>
+
+            <p>Untuk informasi lebih lanjut, hubungi kontak kami dibawah ini :</p>
+          </div>
+
+          <div class="container infoKontak">
+            <div class="row gy-4 justify-content-center">
+
+
+
+              <div class="col-lg-3">
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Lokasi:</h4>
+                    <p><a
+                        href="https://www.google.com/maps/place/7%C2%B046'47.2%22S+110%C2%B018'11.7%22E/@-7.7797797,110.3026013,19z/data=!3m1!4b1!4m12!1m7!3m6!1s0x2e7af7c1f1ccf937:0x8c71b79f28eef3a5!2sKebon+Ndhelik+Sidokarto!8m2!3d-7.7802923!4d110.3037981!16s%2Fg%2F11k4x3ps_d!3m3!8m2!3d-7.779781!4d110.303245?entry=ttu">Nogosari,
+                        Sidokarto, Godean, Sleman, D.I.Yogyakarta</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h4>Email:</h4>
+                    <p><a href="https://mailto:yudhistira.lazuardi2@gmail.com">yudhistira.lazuardi2@gmail.com</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="info-item d-flex">
+                  <i class="bi bi-phone flex-shrink-0"></i>
+                  <div>
+                    <h4>Telp:</h4>
+                    <p><a href="https://api.whatsapp.com/send?phone=6285176881320">+62 851 7688 1320</a></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="container mb-5">
+            <div class="">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d988.2736832950153!2d110.30260126951526!3d-7.77977967075377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwNDYnNDcuMiJTIDExMMKwMTgnMTEuNyJF!5e0!3m2!1sen!2sid!4v1696142080076!5m2!1sen!2sid"
+                width="100%" height="384" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </section>
+    </div>
+    <!-- End Kontak -->
+
+  </main>
+
+  <!-- end of main -->
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          Copyright &copy; <span>2023</span>
+        </div>
+        <div class="credits">
+          Created by <a href="https://api.whatsapp.com/send?phone=6285176881320"> Devriyu.com </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Scroll Up -->
+  <button onclick="topFunction()" id="myBtn" title="Ke atas"><i
+      class="bi bi-arrow-up-square-fill tombolUp"></i></button>
+  <!-- Scroll End -->
+
+  <!-- WhatsAap floating Button -->
+  <a href="https://api.whatsapp.com/send?phone=6285176881320" class="wa-popup" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+
+  </a>
+  <a href="https://api.whatsapp.com/send?phone=6285176881320">
+    <div class="dialog-pop">
+      <p class="text-center justify-content-center">Chat Me</p>
+    </div>
+  </a>
+
+  <!-- End Whatsapp -->
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+
+
+  <!-- Vendor Js -->
+  <script src="./asset/vendor/jquery/jquery.min.js"></script>
+  <script src="./asset/vendor/easing/easing.min.js"></script>
+  <script src="./asset/vendor/waypoints.min.js"></script>
+  <script src="./asset/vendor/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script src="./asset/vendor/lightbox/js/lightbox.min.js"></script>
+
+  <!-- bootstrap for timeline -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+  <!-- Lord icon -->
+  <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/fb1f2e46f7.js" crossorigin="anonymous"></script>
+
+
+  <!-- My Js -->
+  <script src="./asset/js/script.js"></script>
+
+  <!-- Scripts Eksternal (Contoh: Google Analytics) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+    //akun google analytic 
+  </script>
+
+
+</body>
+
+</html>
