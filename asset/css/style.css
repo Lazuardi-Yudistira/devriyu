@@ -30,7 +30,7 @@ a {
 /* header */
 /* navbar */
 .navbar {
-  /* background: var(--main-color); */
+  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
 }
 
 .navbar ul li a {
@@ -55,7 +55,6 @@ a {
 
 
 
-
 .dropdown:hover>.dropdown-menu {
   display: block;
 
@@ -69,7 +68,7 @@ a {
 
 .nav-item .dropdown .btn {
   color: white;
-  font-weight: 600;
+  font-weight: 500;
 
 }
 
@@ -330,9 +329,19 @@ section {
 /* end of artikel */
 
 /* kartunflat */
+.kartunflatkanan {
+  display: flex;
+  justify-content: left;
+  width: 650px;
+  height: 600px;
+}
+
+
 .kartunflatkiri {
   display: flex;
   justify-content: right;
+  width: 500px;
+  height: 600px;
 }
 
 /* end of kartunflat */
@@ -344,8 +353,8 @@ section {
   color: var(--text-color);
   font-weight: lighter;
   font-size: 18px;
-  border-top-left-radius: 25%;
-  border-bottom-right-radius: 25%;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
 }
 
 /* timeline */
