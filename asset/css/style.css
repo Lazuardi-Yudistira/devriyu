@@ -35,9 +35,9 @@ a {
 
 .navbar ul li a {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  letter-spacing: 1.5px;
+
 }
 
 .navbar ul li a:hover {
@@ -485,6 +485,31 @@ section {
 }
 
 /* end of fitur */
+
+/* price list */
+.harga .checklist {
+  color: var(--fourth-color);
+  font-size: 1.5rem;
+}
+
+.harga .basic {
+  /* color: white; */
+  background: var(--main-color);
+
+}
+
+.harga .premium {
+  color: white;
+  background: var(--fourth-color);
+}
+
+.harga .profesional {
+  color: white;
+  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
+}
+
+/* end of price list */
+
 
 /* faq */
 .template_faq {
