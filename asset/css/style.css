@@ -36,38 +36,29 @@ a {
 .navbar ul li a {
   color: white;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: bolder;
 
 }
 
 .navbar ul li a:hover {
   color: var(--second-color);
-  font-weight: bolder;
-}
-
-.navbar-brand span {
-  /* color: var(--main-color); */
-  font-weight: bold;
-  font-size: 24px;
-  margin-left: 2rem;
 
 }
 
 
-
-.dropdown:hover>.dropdown-menu {
+/* .dropdown:hover>.dropdown-menu {
   display: block;
 
-}
+} */
 
 
 .dropdown-menu .dropdown-item {
-  color: #000;
+  color: var(--fourth-color);
 
 }
 
 .nav-item .dropdown .btn {
-  color: white;
+  color: var(--fourth-color);
   font-weight: 500;
 
 }
@@ -85,19 +76,12 @@ a {
 
 #header.header-scrolled ul li a {
   color: var(--text-color);
-  font-weight: bolder;
 }
 
-#header.header-scrolled .navbar-brand span {
-  color: var(--text-color) !important;
+#header.header-scrolled ul li a:hover {
+  color: var(--second-color);
 }
 
-
-@media (max-width: 510px) {
-  .navbar-brand img {
-    display: none;
-  }
-}
 
 
 
@@ -140,8 +124,8 @@ a {
 /* global configuration */
 article,
 section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .line {
@@ -493,8 +477,9 @@ section {
 }
 
 .harga .basic {
-  /* color: white; */
-  background: var(--main-color);
+  color: white;
+  background: var(--second-bg-color);
+
 
 }
 
