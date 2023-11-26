@@ -29,60 +29,74 @@ a {
 
 /* header */
 /* navbar */
-.navbar {
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
-}
+/* .navbar {
+  padding: 20px 0px;
+} */
 
-.navbar ul li a {
-  color: white;
-  font-size: 18px;
-  font-weight: bolder;
-
-}
-
-.navbar ul li a:hover {
-  color: var(--second-color);
-
-}
-
-
-/* .dropdown:hover>.dropdown-menu {
-  display: block;
-
+/* .navbar-brand img {
+  padding-left: 10px;
+  margin-right: 10px;
 } */
 
 
-.dropdown-menu .dropdown-item {
-  color: var(--fourth-color);
-
-}
-
-.nav-item .dropdown .btn {
-  color: var(--fourth-color);
+.navbar ul li a {
+  color: var(--text-color);
   font-weight: 500;
-
 }
+
+.navbar ul li a:hover {
+  color: var(--text-color) !important;
+  background-color: var(--bg-color);
+  font-weight: bolder;
+}
+
+
+
+.navbar-brand span {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-brand span p {
+  color: var(--second-color) !important;
+  display: inline-block;
+}
+
+
+
 
 /* navbar change color while scrolling */
 #header.header-scrolled {
-  background: rgb(19, 175, 240);
-  background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
+  background: var(--bg-color);
   /* padding: 20px 0; */
   /* height: 105px; */
   transition: all 0.5s;
   font-weight: 500;
-
 }
 
 #header.header-scrolled ul li a {
   color: var(--text-color);
+  font-weight: bolder;
 }
 
 #header.header-scrolled ul li a:hover {
-  color: var(--second-color);
+  color: white;
 }
 
+/* tampilan hp kecil */
+@media (max-width: 482px) {
 
+  .navbar-brand span {
+    display: none
+  }
+
+  .navbar-brand img {
+    display: none;
+  }
+
+
+}
 
 
 @media (max-width: 990px) {
@@ -96,29 +110,31 @@ a {
 
 
 @media (max-width: 990px) {
-  .dropdown-toggle {
-    color: #000 !important;
-    font-weight: bolder !important;
+  .navbar ul li a:hover {
+    color: white;
+    background-color: var(--fourth-color);
+    border-radius: 10px;
   }
 }
+
+
+
 
 
 @media (max-width: 990px) {
   #navbarNav {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--second-bg-color);
     padding-top: 10px;
     padding-bottom: 20px;
-    /* border-radius: 10%; */
-
+    border-radius: 10%;
   }
 }
 
 
-@media (max-width: 990px) {
-  .tombolWa {
-    display: none;
-  }
-}
+
+
+
+
 
 /* main */
 /* global configuration */
@@ -184,6 +200,7 @@ section {
   justify-content: center;
   align-items: center;
   border-bottom-right-radius: 40%;
+  padding-top: 200px;
 }
 
 .jumbotron-img img {
@@ -313,11 +330,19 @@ section {
 /* end of artikel */
 
 /* kartunflat */
-.kartunflatkanan {
-  display: flex;
-  justify-content: left;
-  width: 650px;
-  height: 600px;
+@media (max-width: 990px) {
+  .kartunflatkanan img {
+    width: 100%;
+  }
+
+  .kartunflatkiri img {
+    display: none;
+  }
+
+  .keuntungan4-6 {
+    margin-top: -550px;
+  }
+
 }
 
 
@@ -460,6 +485,9 @@ section {
   color: var(--text-color);
   border-top-right-radius: 30%;
 }
+
+
+
 
 /* end of about */
 
