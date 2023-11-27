@@ -45,7 +45,7 @@ a {
 }
 
 .navbar ul li a:hover {
-  color: var(--text-color) !important;
+  color: var(--main-color) !important;
   background-color: var(--bg-color);
   font-weight: bolder;
 }
@@ -56,6 +56,7 @@ a {
   color: var(--text-color);
   font-weight: bold;
   font-size: 20px;
+  margin-left: 10px;
 }
 
 .navbar-brand span p {
@@ -81,27 +82,15 @@ a {
 }
 
 #header.header-scrolled ul li a:hover {
-  color: white;
+  background-color: var(--text-color);
+  color: var(--main-color) !important;
 }
 
-/* tampilan hp kecil */
-@media (max-width: 482px) {
-
-  .navbar-brand span {
-    display: none
-  }
-
-  .navbar-brand img {
-    display: none;
-  }
-
-
-}
 
 
 @media (max-width: 990px) {
   #navbarNav ul li a {
-    color: #000;
+    color: white;
     transition: all 0.5s;
     font-weight: bolder;
   }
@@ -112,13 +101,10 @@ a {
 @media (max-width: 990px) {
   .navbar ul li a:hover {
     color: white;
-    background-color: var(--fourth-color);
+    background-color: var(--text-color);
     border-radius: 10px;
   }
 }
-
-
-
 
 
 @media (max-width: 990px) {
